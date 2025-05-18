@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for cleaning service
+				'clean-blue': '#D3E4FD',
+				'clean-green': '#F2FCE2',
+				'clean-peach': '#FDE1D3',
+				'clean-orange': '#F97316',
+				'clean-gray': '#8E9196',
+				'clean-dark': '#1A1F2C',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +92,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
 			}
 		}
 	},
