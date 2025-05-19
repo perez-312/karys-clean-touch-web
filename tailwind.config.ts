@@ -63,11 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for cleaning service
+				// Updated colors for cleaning service - changing orange to light blue
 				'clean-blue': '#D3E4FD',
 				'clean-green': '#F2FCE2',
 				'clean-peach': '#FDE1D3',
-				'clean-orange': '#F97316',
+				'clean-light-blue': '#33C3F0', // New light blue color replacing clean-orange
 				'clean-gray': '#8E9196',
 				'clean-dark': '#1A1F2C',
 			},
@@ -96,12 +96,20 @@ export default {
 				'float': {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' },
+				},
+				'wave': {
+					'0%': { transform: 'translateX(0) translateY(0)' },
+					'25%': { transform: 'translateX(-5px) translateY(5px)' },
+					'50%': { transform: 'translateX(0) translateY(10px)' },
+					'75%': { transform: 'translateX(5px) translateY(5px)' },
+					'100%': { transform: 'translateX(0) translateY(0)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 3s ease-in-out infinite',
+				'wave': 'wave 8s ease-in-out infinite',
 			}
 		}
 	},
